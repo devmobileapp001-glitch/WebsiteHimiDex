@@ -2,42 +2,471 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07140f">
-  <title>HimiDex — Android Apps & Games</title>
-  <meta name="description" content="HimiDex builds Android apps and mobile games with personality, clarity, and momentum.">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23d9ff6c'/%3E%3Ctext x='8' y='29' font-size='28' font-family='sans-serif' font-weight='bold' fill='%2307140f'%3EH%3C/text%3E%3C/svg%3E">
+  <title>HimiDex — Android Apps & Mobile Games Studio</title>
+  <meta name="description" content="HimiDex is an independent mobile studio crafting lightweight Android utility apps and playful indie mobile games. Built for performance, personality, and privacy.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23d9ff6c'/%3E%3Ctext x='8' y='29' font-size='28' font-family='sans-serif' font-weight='800' fill='%2307140f'%3EH%3C/text%3E%3C/svg%3E">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header"><nav class="wrap"><a class="brand" href="/"><b>H</b>himi<span>dex</span></a><div class="links"><a href="#products">Products</a><a href="#about">Studio</a><a href="/privacy-policy/">Privacy</a><a class="contact" href="/support/">Get support <i>↗</i></a></div></nav></header>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="wrap">
+      <a class="brand" href="./" aria-label="HimiDex Home">
+        <b>H</b>himi<span>dex</span>
+        <span class="brand-badge">APPS &amp; GAMES</span>
+      </a>
+      <div class="links">
+        <a href="#focus">Focus</a>
+        <a href="#products">Products</a>
+        <a href="#engineering">Tech Stack</a>
+        <a href="#about">Studio</a>
+        <a href="privacy-policy/">Privacy</a>
+        <a class="contact-btn" href="support/">Get Support <i>↗</i></a>
+      </div>
+    </nav>
+  </header>
+
   <main id="main">
+    <!-- Hero Section -->
     <section class="hero wrap">
       <div class="hero-copy">
-        <div class="eyebrow"><span></span> Independent mobile studio</div>
-        <h1>Made to feel<br><em>alive in your hand.</em></h1>
-        <p>HimiDex creates bright Android apps and playful game worlds — small ideas, carefully built, made to stay with you.</p>
-        <div class="hero-actions"><a class="button" href="#products">Explore our work <span>↗</span></a><a class="quiet-link" href="#about">Meet the studio <span>↓</span></a></div>
-        <div class="hero-meta"><div><strong>Android first</strong><span>Built for the everyday</span></div><div><strong>01 / In progress</strong><span>Original worlds in motion</span></div></div>
+        <div class="eyebrow"><span></span> Independent Android Studio</div>
+        <h1>Crafted for Android.<br><em>Built to feel alive.</em></h1>
+        <p>HimiDex creates purposeful Android utility apps and spirited mobile games. Small ideas, refined engineering, and software made to feel right in your hand.</p>
+        
+        <div class="hero-actions">
+          <a class="button" href="#products">Explore our work <span>↗</span></a>
+          <a class="button-secondary" href="#focus">Our disciplines <span>↓</span></a>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <strong>100% Android Native</strong>
+            <span>Kotlin &amp; Jetpack Compose</span>
+          </div>
+          <div>
+            <strong>Dual Discipline</strong>
+            <span>Useful Apps &amp; Indie Games</span>
+          </div>
+          <div>
+            <strong>Privacy-First</strong>
+            <span>Google Play compliant</span>
+          </div>
+        </div>
       </div>
-      <div class="hero-stage" aria-label="CatGun game project preview">
-        <div class="stage-label"><span>NOW IN THE LAB</span><strong>CATGUN / 01</strong></div>
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="spark spark-one">✦</div><div class="spark spark-two">✦</div>
-        <div class="pixel-grid"></div><img src="/cat-hero.png" alt="Cat warrior character from the CatGun project" width="245" height="287">
-        <div class="stage-foot"><span>HIMIDEX ORIGINAL</span><span>ANDROID GAME</span></div>
+
+      <!-- Unified Dual Discipline Hero Stage -->
+      <div class="hero-stage" aria-label="HimiDex Dual Studio Showcase: Apps and Games">
+        <!-- Stage Top Bar -->
+        <div class="stage-header-bar">
+          <div class="stage-pill-live">
+            <span class="live-dot"></span> LIVE LAB
+          </div>
+          <div class="stage-center-label">HIMIDEX // DUAL DISCIPLINE</div>
+          <div class="stage-stat-pill">02 DISCIPLINES</div>
+        </div>
+
+        <!-- Stage Dual Showcase Body -->
+        <div class="stage-dual-container">
+          <!-- Left Wing: Android App (Himi Story) -->
+          <div class="stage-card stage-card-app">
+            <div class="stage-card-badge">
+              <span>🎧</span>
+              <span>APP · HIMI STORY</span>
+            </div>
+
+            <div class="mockup-mini-phone">
+              <div class="screen-top">
+                <span class="screen-time">Đang phát audio</span>
+                <span class="screen-sleep">🌙 45m</span>
+              </div>
+
+              <div class="screen-player-art">
+                <div class="art-thumb">📖</div>
+                <div class="art-wave" title="Audio playing">
+                  <span class="wave-stick"></span>
+                  <span class="wave-stick"></span>
+                  <span class="wave-stick"></span>
+                  <span class="wave-stick"></span>
+                </div>
+              </div>
+
+              <div class="track-title">Huyền Thoại Xứ Mây</div>
+              <div class="track-sub">Tập 18 · Tốc độ 1.25x</div>
+
+              <div class="screen-scrubber">
+                <div class="scrub-bar"><div class="scrub-progress"></div></div>
+                <div class="scrub-times"><span>18:42</span><span>45:10</span></div>
+              </div>
+
+              <div class="screen-controls">
+                <span class="ctrl-btn-sub">↺ 15s</span>
+                <span class="ctrl-btn-play">❚❚</span>
+                <span class="ctrl-btn-sub">30s ↻</span>
+              </div>
+            </div>
+
+            <div class="stage-card-footer">
+              <span>JETPACK MEDIA3</span>
+              <span>OFFLINE AUDIO</span>
+            </div>
+          </div>
+
+          <!-- Center Bridge Connector -->
+          <div class="stage-bridge">
+            <span class="bridge-spark">✦</span>
+          </div>
+
+          <!-- Right Wing: Indie Game (CatGun) -->
+          <div class="stage-card stage-card-game">
+            <div class="stage-card-badge game-badge">
+              <span>🎮</span>
+              <span>GAME · CATGUN</span>
+            </div>
+
+            <div class="game-stage-arena">
+              <div class="arena-orbit arena-orbit-one"></div>
+              <div class="arena-orbit arena-orbit-two"></div>
+              <div class="arena-sparkle s1">✦</div>
+              <div class="arena-sparkle s2">✦</div>
+              <img class="arena-character" src="cat-hero.png" alt="Cat warrior character from the CatGun project" width="160" height="187">
+              <div class="arena-hud-chip">ROGUE ACTION</div>
+            </div>
+
+            <div class="stage-card-footer">
+              <span>INDIE ACTION</span>
+              <span>120 FPS TARGET</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage Bottom Dock Bar -->
+        <div class="stage-bottom-bar">
+          <div class="dock-item">
+            <b>01</b> <span>Android Native Utility &amp; Audio</span>
+          </div>
+          <div class="dock-divider">✦</div>
+          <div class="dock-item">
+            <b>02</b> <span>Bite-sized Indie Game Worlds</span>
+          </div>
+        </div>
       </div>
     </section>
-    <div class="ticker" aria-label="HimiDex values"><div><span>ANDROID FIRST</span><b>✦</b><span>USEFUL APPS</span><b>✦</b><span>PLAYFUL WORLDS</span><b>✦</b><span>SMOOTH EXPERIENCES</span><b>✦</b><span>ANDROID FIRST</span><b>✦</b></div></div>
+
+    <!-- Marquee Ticker -->
+    <div class="ticker" aria-label="HimiDex values">
+      <div>
+        <span>ANDROID NATIVE</span><b>✦</b>
+        <span>INDIE GAMES</span><b>✦</b>
+        <span>CLEAN UTILITIES</span><b>✦</b>
+        <span>JETPACK COMPOSE</span><b>✦</b>
+        <span>MATERIAL YOU</span><b>✦</b>
+        <span>120HZ FLUIDITY</span><b>✦</b>
+        <span>PRIVACY-FIRST</span><b>✦</b>
+        <span>NO BLOATWARE</span><b>✦</b>
+        <span>ANDROID NATIVE</span><b>✦</b>
+        <span>INDIE GAMES</span><b>✦</b>
+        <span>CLEAN UTILITIES</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- Dual Focus Pillars -->
+    <section id="focus" class="section wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow"><span></span> 01 / Two Disciplines</div>
+          <h2>One studio.<br><em>Two ways to build.</em></h2>
+        </div>
+        <p>We do not treat apps and games as afterthoughts. Each discipline has its own dedicated design language and performance standard.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <!-- Pillar 1: Android Apps -->
+        <article class="pillar-card pillar-apps">
+          <div class="pillar-icon-row">
+            <div class="pillar-icon">🎧</div>
+            <span class="pillar-tag">Apps &amp; Audio Experiences</span>
+          </div>
+          <h3>Clean, purposeful everyday apps</h3>
+          <p>We craft native Android applications ranging from immersive audio story readers to lightweight daily tools. Built with modern Jetpack Compose and media background services so your device runs cool, fast, and battery-friendly.</p>
+          <ul class="pillar-features">
+            <li><b>✦</b> 100% Native Kotlin &amp; Jetpack Compose</li>
+            <li><b>✦</b> Media3 background audio &amp; offline playback engine</li>
+            <li><b>✦</b> Dynamic Material You theming and AMOLED night mode</li>
+            <li><b>✦</b> Zero intrusive background drain or battery lag</li>
+          </ul>
+        </article>
+
+        <!-- Pillar 2: Mobile Games -->
+        <article class="pillar-card pillar-games">
+          <div class="pillar-icon-row">
+            <div class="pillar-icon">🎮</div>
+            <span class="pillar-tag">Mobile Indie Games</span>
+          </div>
+          <h3>Playful, tactile game experiences</h3>
+          <p>We design games tailored specifically for touchscreens and quick sessions. Character-driven, visually distinct, and engineered for satisfying gameplay loops you can enjoy anywhere.</p>
+          <ul class="pillar-features">
+            <li><b>✦</b> Stylized, character-led art direction</li>
+            <li><b>✦</b> Responsive touch feedback and tuned haptics</li>
+            <li><b>✦</b> Calibrated for consistent 60 to 120 FPS refresh rates</li>
+            <li><b>✦</b> Immediate fun with pick-up-and-play mechanics</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Products & Portfolio Section -->
     <section id="products" class="section wrap">
-      <div class="section-head"><div><div class="eyebrow"><span></span> 01 / What we make</div><h2>Little worlds.<br><em>Lasting impressions.</em></h2></div><p>Every HimiDex product starts with a clear purpose: make a moment more useful, more delightful, or both.</p></div>
-      <div class="product-grid">
-        <article class="project-card game-card"><div class="card-top"><span>01 / Mobile game</span><i>In development</i></div><div class="game-orb"><img src="/cat-hero.png" alt="" width="100" height="117"></div><div class="card-bottom"><h3>CatGun</h3><p>A fast, character-led action world built for a few great minutes at a time.</p><a href="/support/" aria-label="Get support for CatGun">Explore project <span>↗</span></a></div></article>
-        <article class="project-card app-card"><div class="card-top"><span>02 / Mobile apps</span><i>On the roadmap</i></div><div class="app-visual"><div class="phone"><span></span><b>H</b><small>Make it simple.</small><i></i></div><div class="app-lines"><span></span><span></span><span></span></div></div><div class="card-bottom"><h3>Useful by design</h3><p>Lightweight Android tools shaped around real needs and easy next steps.</p><a href="#about">Our approach <span>↗</span></a></div></article>
+      <div class="section-head">
+        <div>
+          <div class="eyebrow"><span></span> 02 / Products &amp; Lab</div>
+          <h2>Little worlds.<br><em>Lasting impressions.</em></h2>
+        </div>
+        <p>Explore current releases, projects in active development, and concept prototypes from the HimiDex laboratory.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs" role="tablist" aria-label="Product categories">
+        <button class="filter-btn active" data-filter="all" onclick="filterProducts('all', this)">All Projects (4)</button>
+        <button class="filter-btn" data-filter="app" onclick="filterProducts('app', this)">📱 Android Apps (2)</button>
+        <button class="filter-btn" data-filter="game" onclick="filterProducts('game', this)">🎮 Mobile Games (2)</button>
+      </div>
+
+      <!-- Product Cards Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- Product 1: CatGun (Game) -->
+        <article class="product-card" data-category="game">
+          <div class="card-top">
+            <span class="badge-tag badge-game">01 / Mobile Game</span>
+            <i class="card-status">In Development</i>
+          </div>
+          <div class="card-visual-area">
+            <div class="game-card-bg">
+              <img src="cat-hero.png" alt="CatGun game hero character" width="140" height="164">
+            </div>
+          </div>
+          <div class="card-bottom">
+            <h3>CatGun: Rogue Paws</h3>
+            <p>A fast-paced, character-led action roguelite built for quick bursts of agility, upgrade synergies, and arcade boss battles.</p>
+            <div class="card-meta-tags">
+              <span class="meta-pill">Action Arcade</span>
+              <span class="meta-pill">Pixel / Indie Art</span>
+              <span class="meta-pill">120 FPS Ready</span>
+            </div>
+            <a class="card-action-link" href="support/" aria-label="Get project support or beta info for CatGun">Explore Project Status <span>↗</span></a>
+          </div>
+        </article>
+
+        <!-- Product 2: Himi Story (Audio Story App) -->
+        <article class="product-card" data-category="app">
+          <div class="card-top">
+            <span class="badge-tag badge-app">02 / Android App</span>
+            <i class="card-status alt">Coming to Play Console</i>
+          </div>
+          <div class="card-visual-area">
+            <div class="app-audio-preview">
+              <div class="audio-preview-top">
+                <div class="audio-badge-live">
+                  <span class="audio-pulse-dot"></span>
+                  <span>ĐANG PHÁT AUDIO</span>
+                </div>
+                <span style="font: 700 11px var(--font-mono); color: var(--app-cyan);">1.25x</span>
+              </div>
+              <div class="audio-preview-body">
+                <div class="audio-cover-art">🎧</div>
+                <div class="audio-meta-text">
+                  <div class="audio-meta-title">Kỳ Án Đêm Trăng · Hồi 4</div>
+                  <div class="audio-meta-sub">24:15 / 52:00 · Minh Triết đọc</div>
+                </div>
+              </div>
+              <div class="audio-ctrl-strip">
+                <span>↺ 15s</span>
+                <span><b>❚❚ Tạm dừng</b></span>
+                <span>30s ↻</span>
+                <span>🌙 30p</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <h3>Himi Story: Nghe Truyện Audio</h3>
+            <p>Ứng dụng nghe truyện audio &amp; sách nói thông minh: hỗ trợ hẹn giờ ngủ ban đêm, tải toàn bộ tập để nghe offline không cần 4G, giao diện AMOLED tối ưu pin và hỗ trợ Android Auto.</p>
+            <div class="card-meta-tags">
+              <span class="meta-pill">Audiobook &amp; Truyện</span>
+              <span class="meta-pill">Jetpack Media3</span>
+              <span class="meta-pill">Hẹn Giờ Ngủ 🌙</span>
+              <span class="meta-pill">Nghe Offline</span>
+            </div>
+            <a class="card-action-link" href="support/" aria-label="Learn about Himi Story Audio App">Đang phát triển · Sắp lên Google Play <span>↗</span></a>
+          </div>
+        </article>
+
+        <!-- Product 3: DayPulse (App) -->
+        <article class="product-card" data-category="app">
+          <div class="card-top">
+            <span class="badge-tag badge-app">03 / Android App</span>
+            <i class="card-status alt">Roadmap</i>
+          </div>
+          <div class="card-visual-area">
+            <div class="app-ui-preview">
+              <div class="app-ui-row">
+                <span class="app-ui-title">🎯 Focus Rhythm</span>
+                <span style="font: 700 12px var(--font-mono); color: var(--app-cyan);">25:00</span>
+              </div>
+              <div class="app-ui-row">
+                <span class="app-ui-title">🔥 Daily Momentum</span>
+                <span style="font: 700 12px var(--font-mono); color: var(--acid);">14 Days</span>
+              </div>
+              <div class="app-ui-row">
+                <span class="app-ui-title">🔒 Local Vault Only</span>
+                <span style="font: 600 11px var(--font-mono); color: var(--muted);">Encrypted</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <h3>DayPulse: Focus &amp; Habit</h3>
+            <p>A distraction-free companion to build resilient routines and deep work momentum without push notifications or account mandates.</p>
+            <div class="card-meta-tags">
+              <span class="meta-pill">Productivity</span>
+              <span class="meta-pill">No Account Required</span>
+              <span class="meta-pill">Private</span>
+            </div>
+            <a class="card-action-link" href="support/" aria-label="View DayPulse roadmap">View Roadmap <span>↗</span></a>
+          </div>
+        </article>
+
+        <!-- Product 4: Orbit Jumpers (Game) -->
+        <article class="product-card" data-category="game">
+          <div class="card-top">
+            <span class="badge-tag badge-game">04 / Mobile Game</span>
+            <i class="card-status">Concept Lab</i>
+          </div>
+          <div class="card-visual-area">
+            <div class="game-card-bg" style="border-style: dashed; background: radial-gradient(circle, rgba(82, 229, 255, 0.15), transparent 70%);">
+              <div style="font-size: 42px;">🪐</div>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <h3>Orbit Jumpers</h3>
+            <p>A rhythm-infused one-tap physics runner where gravity wells and celestial timing test your reflexes across changing star systems.</p>
+            <div class="card-meta-tags">
+              <span class="meta-pill">One-Touch Casual</span>
+              <span class="meta-pill">Orbital Physics</span>
+              <span class="meta-pill">Dynamic Audio</span>
+            </div>
+            <a class="card-action-link" href="support/" aria-label="Check concept notes for Orbit Jumpers">Concept Notes <span>↗</span></a>
+          </div>
+        </article>
       </div>
     </section>
-    <section id="about" class="studio-section"><div class="wrap studio-grid"><div><div class="eyebrow"><span></span> 02 / The studio</div><h2>Care in the details.<br><em>Energy in the outcome.</em></h2></div><div class="studio-copy"><p>HimiDex is an independent studio for Android apps and mobile games. We like products that are easy to enter, satisfying to use, and unmistakably their own.</p><div class="principles"><div><b>01</b><span>Clear from the first tap</span></div><div><b>02</b><span>Built to move smoothly</span></div><div><b>03</b><span>Made with a point of view</span></div></div></div></div></section>
-    <section class="privacy-section wrap"><div class="privacy-card"><div class="privacy-mark">✦</div><div><div class="eyebrow">Privacy, plainly stated</div><h2>Your trust is part of the product.</h2><p>Read how we handle data, use advertising, and support your choices.</p></div><a class="round-link" href="/privacy-policy/" aria-label="Read our Privacy Policy">↗</a></div></section>
+
+    <!-- Engineering & Standards Section -->
+    <section id="engineering" class="tech-section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow"><span></span> 03 / Engineering Culture</div>
+            <h2>Native excellence<br><em>from line one.</em></h2>
+          </div>
+          <p>We pride ourselves on solid software engineering principles so our apps and games perform smoothly across all Android devices.</p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-card">
+            <div class="tech-card-num">01 / STACK</div>
+            <h4>Modern Android</h4>
+            <p>Engineered with Kotlin, Jetpack Compose, Coroutines, and modern architecture for rock-solid stability.</p>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-card-num">02 / VITALS</div>
+            <h4>Performance First</h4>
+            <p>Sub-500ms cold launches, compact APK sizes, zero memory leaks, and buttery smooth 60–120Hz frame rates.</p>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-card-num">03 / DESIGN</div>
+            <h4>Material You (M3)</h4>
+            <p>Thoughtful adaptive layouts that naturally inherit dynamic wallpaper colors, dark themes, and tablet layouts.</p>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-card-num">04 / SAFETY</div>
+            <h4>Play Store Trust</h4>
+            <p>Full Google Play Data Safety alignment. No unnecessary system permissions, no covert trackers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Studio Section -->
+    <section id="about" class="studio-section">
+      <div class="wrap studio-grid">
+        <div>
+          <div class="eyebrow"><span></span> 04 / The Studio</div>
+          <h2>Care in the details.<br><em>Energy in the outcome.</em></h2>
+        </div>
+        <div class="studio-copy">
+          <p>HimiDex is an independent studio founded on the belief that mobile software can be both deeply practical and genuinely fun. Whether building a utility tool that saves you seconds every day or a game that brings an unexpected smile, we focus on craftsmanship.</p>
+          <div class="principles">
+            <div><b>01</b><span>Clear and responsive from the first tap</span></div>
+            <div><b>02</b><span>Engineered to move fluidly at 60–120 FPS</span></div>
+            <div><b>03</b><span>Respects user battery, storage, and privacy</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy & Google Play Trust Section -->
+    <section class="privacy-section wrap">
+      <div class="privacy-card">
+        <div class="privacy-mark">✦</div>
+        <div>
+          <div class="eyebrow">Privacy &amp; Data Safety</div>
+          <h2>Your trust is part of the product.</h2>
+          <p>We operate with total transparency. Read our data safety commitments, AdMob and Firebase disclosure, and support rights.</p>
+        </div>
+        <a class="round-link" href="privacy-policy/" aria-label="Read our Privacy Policy">↗</a>
+      </div>
+    </section>
   </main>
-  <footer class="wrap footer"><div><a class="brand" href="/"><b>H</b>himi<span>dex</span></a><p>© 2026 HimiDex. Android apps & games.</p></div><div class="footer-links"><a href="/privacy-policy/">Privacy Policy</a><a href="/terms/">Terms of Use</a><a href="/support/">Support & Data</a></div></footer>
-</body></html>
+
+  <!-- Footer -->
+  <footer class="wrap footer">
+    <div>
+      <a class="brand" href="./">
+        <b>H</b>himi<span>dex</span>
+      </a>
+      <p>© 2026 HimiDex. Independent Android Apps &amp; Mobile Games Studio.</p>
+    </div>
+    <div class="footer-links">
+      <a href="privacy-policy/">Privacy Policy</a>
+      <a href="terms/">Terms of Use</a>
+      <a href="support/">Support &amp; Data Requests</a>
+    </div>
+  </footer>
+
+  <!-- Light Vanilla JavaScript for Interactive Filter -->
+  <script>
+    function filterProducts(category, btn) {
+      // Update active button state
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Filter product cards
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        if (category === 'all' || cardCat === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
